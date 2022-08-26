@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_splash"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".fragments.servicedetails.ServiceDetailFragment">
+    <ImageView
+        android:id="@+id/serviceImageId"
+        android:layout_width="@dimen/image_height_width"
+        android:layout_height="@dimen/image_height_width"
+        android:layout_marginTop="@dimen/hiad_40_dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/ic_plumbing"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/service_image"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/serviceProviderNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/shop_name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceImageId" />
+    <TextView
+        android:id="@+id/serviceProviderEmailTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/hiad_10_dp"
+        android:layout_marginEnd="20dp"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:text="@string/shop_name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceProviderNameTV" />
+    <TextView
+        android:id="@+id/serviceProviderPhoneTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/hiad_10_dp"
+        android:layout_marginEnd="20dp"
+        android:drawableRight="@drawable/ic_baseline_phone_enabled_24"
+        android:text="@string/shop_name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceProviderEmailTV" />
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/shop_name"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/serviceProviderPhoneTV" />
+    <TextView
+        android:id="@+id/shopAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hiad_5_dp"
+        android:gravity="center_horizontal"
+        android:text="@string/shop_address"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/shopName" />
+    <TextView
+        android:id="@+id/countryTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hiad_5_dp"
+        android:gravity="center_horizontal"
+        android:text="@string/shop_rating"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/shopAddress" />
+    <ImageView
+        android:id="@+id/phoneImg"
+        android:layout_width="@dimen/hiad_66_dp"
+        android:layout_height="@dimen/hiad_66_dp"
+        android:layout_marginStart="@dimen/hiad_20_dp"
+        android:layout_marginBottom="@dimen/hiad_40_dp"
+        android:src="@drawable/ic_phone"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/countryTV"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/phone_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

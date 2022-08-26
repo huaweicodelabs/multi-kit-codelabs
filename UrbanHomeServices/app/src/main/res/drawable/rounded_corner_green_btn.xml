@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- in drawable folder-->
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:colorControlHighlight">
+
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <stroke android:color="@color/light_gray" android:width="2dp"/>
+            <solid android:color="?android:colorAccent" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <stroke android:color="@color/light_gray" android:width="2dp"/>
+            <!-- put your background color here-->
+            <solid android:color="@color/hiad_emui_functional_green" />
+        </shape>
+    </item>
+
+</ripple>

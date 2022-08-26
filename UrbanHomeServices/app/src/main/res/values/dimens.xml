@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="image_height_width">100dp</dimen>
+    <dimen name="margin_seventy">70dp</dimen>
+    <dimen name="activity_horizontal_margin_40">40dp</dimen>
+    <dimen name="corner_radius_rounded">25dp</dimen>
+    <dimen name="corner_radius_default">2dp</dimen>
+    <dimen name="hiad_16_dp">16dp</dimen>
+    <dimen name="hiad_20_dp">20dp</dimen>
+    <dimen name="hiad_10_dp">10dp</dimen>
+    <dimen name="hiad_8_dp">8dp</dimen>
+    <dimen name="hiad_6_dp">6dp</dimen>
+    <dimen name="hiad_1_dp">1dp</dimen>
+    <dimen name="hiad_32_dp">32dp</dimen>
+    <dimen name="hiad_40_dp">40dp</dimen>
+    <dimen name="hiad_56_dp">56dp</dimen>
+    <dimen name="hiad_2_dp">2dp</dimen>
+    <dimen name="hiad_5_dp">5dp</dimen>
+    <dimen name="hiad_66_dp">66dp</dimen>
+    <dimen name="hiad_4_dp">4dp</dimen>
+    <dimen name="hiad_110_dp">110dp</dimen>
+    <dimen name="hiad_20_sp">20sp</dimen>
+    <dimen name="hiad_150_dp">150dp</dimen>
+</resources>

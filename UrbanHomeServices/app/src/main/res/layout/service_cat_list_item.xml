@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/hiad_10_dp"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/hiad_10_dp"
+    app:cardElevation="@dimen/hiad_10_dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/hiad_10_dp">
+        <ImageView
+            android:id="@+id/serviceTypeImg"
+            android:layout_width="@dimen/image_height_width"
+            android:layout_height="@dimen/image_height_width"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_management"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/searchServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hiad_10_dp"
+            android:layout_marginTop="@dimen/hiad_5_dp"
+            android:ems="13"
+            android:text="@string/search_for_services"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/serviceTypeImg"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/serviceAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hiad_10_dp"
+            android:layout_marginTop="@dimen/hiad_5_dp"
+            android:ems="13"
+            android:text="@string/search_for_services"
+            app:layout_constraintLeft_toRightOf="@id/serviceTypeImg"
+            app:layout_constraintTop_toBottomOf="@id/searchServiceName" />
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hiad_10_dp"
+            android:layout_marginTop="@dimen/hiad_5_dp"
+            android:text="@string/search_for_services"
+            app:layout_constraintLeft_toRightOf="@id/serviceTypeImg"
+            app:layout_constraintTop_toBottomOf="@id/serviceAddress" />
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hiad_10_dp"
+            android:layout_marginTop="@dimen/hiad_5_dp"
+            android:text="@string/search_for_services"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/serviceTypeImg"
+            app:layout_constraintTop_toBottomOf="@id/distance" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

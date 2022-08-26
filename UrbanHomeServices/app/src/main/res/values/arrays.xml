@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="select_service">
+        <item>Choose Service</item>
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Housekeeper</item>
+        <item>Painter</item>
+        <item>Carpenter</item>
+        <item>ApplianceRepair</item>
+    </array>
+</resources>

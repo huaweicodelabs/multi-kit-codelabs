@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_splash"
+    android:paddingBottom="@dimen/hiad_16_dp"
+    tools:context=".kotlin.fragments.profile.ProfileFragment"
+    android:clickable="true"
+    android:focusable="true">
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="@dimen/margin_seventy"
+        android:layout_height="@dimen/margin_seventy"
+        android:layout_marginStart="@dimen/hiad_10_dp"
+        android:layout_marginTop="@dimen/hiad_10_dp"
+        android:contentDescription="@string/title_profile"
+        android:src="@drawable/prof_img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hiad_10_dp"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginEnd="@dimen/hiad_10_dp"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toRightOf="@+id/userImg"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hiad_10_dp"
+        android:layout_marginTop="@dimen/hiad_10_dp"
+        android:layout_marginEnd="@dimen/hiad_10_dp"
+        android:text="@string/email"
+        app:layout_constraintLeft_toRightOf="@+id/userImg"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hiad_1_dp"
+        android:layout_marginStart="@dimen/margin_top"
+        android:layout_marginTop="@dimen/hiad_32_dp"
+        android:layout_marginEnd="@dimen/hiad_20_dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/userImg" />
+    <TextView
+        android:id="@+id/user_address_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hiad_32_dp"
+        android:layout_marginTop="@dimen/hiad_32_dp"
+        android:hint="@string/show_shipping_address"
+        android:text="@string/current_address_text"
+        android:textSize="@dimen/hiad_20_dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/view_line"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:id="@+id/user_address_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/hiad_32_dp"
+        android:layout_marginTop="@dimen/hiad_16_dp"
+        android:hint="@string/show_shipping_address"
+        android:text="@string/show_address_desc"
+        app:layout_constraintTop_toBottomOf="@+id/user_address_title" />
+    <Button
+        android:id="@+id/query_user_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hiad_40_dp"
+        android:layout_marginTop="@dimen/hiad_56_dp"
+        android:layout_marginRight="@dimen/hiad_40_dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/query_address_button_desc"
+        app:layout_constraintTop_toBottomOf="@+id/user_address_id" />
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hiad_40_dp"
+        android:layout_marginTop="@dimen/hiad_16_dp"
+        android:layout_marginRight="@dimen/hiad_40_dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/logout"
+        app:layout_constraintTop_toBottomOf="@+id/query_user_address" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hiad_1_dp"
+        android:layout_marginTop="252dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout"
+        app:layout_goneMarginBottom="@dimen/hiad_2_dp"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

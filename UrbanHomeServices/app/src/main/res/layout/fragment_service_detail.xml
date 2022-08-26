@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLL"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_splash"
+    android:clickable="true"
+    android:touchscreenBlocksFocus="false"
+    tools:context=".fragments.servicedetails.ServiceDetailFragment">
+    <ImageView
+        android:id="@+id/serviceImageId"
+        android:layout_width="@dimen/image_height_width"
+        android:layout_height="@dimen/image_height_width"
+        android:layout_marginTop="@dimen/hiad_56_dp"
+        android:layout_marginBottom="@dimen/hiad_10_dp"
+        android:contentDescription="@string/service_image_id"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hiad_20_dp"
+        android:gravity="center_horizontal"
+        android:text="@string/shop_name"
+        android:textStyle="bold"
+        android:layout_below="@+id/serviceImageId"/>
+    <TextView
+        android:id="@+id/shopAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hiad_5_dp"
+        android:paddingRight="@dimen/hiad_8_dp"
+        android:paddingLeft="@dimen/hiad_8_dp"
+        android:gravity="center_horizontal"
+        android:text="@string/shop_address"
+        android:layout_below="@+id/shopName"/>
+    <TextView
+        android:id="@+id/shopDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hiad_5_dp"
+        android:gravity="center_horizontal"
+        android:text="@string/shop_distance"
+        android:layout_below="@+id/shopAddress"/>
+    <ImageView
+        android:id="@+id/locationImg"
+        android:layout_width="@dimen/hiad_66_dp"
+        android:layout_height="@dimen/hiad_66_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/hiad_150_dp"
+        android:src="@drawable/ic_location" />
+</RelativeLayout>

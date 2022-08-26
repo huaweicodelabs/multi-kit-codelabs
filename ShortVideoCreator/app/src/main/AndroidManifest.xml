@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2020-2021. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.huawei.tiktoksample">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- permissions for root checking on EMUI 10.x and above -->
+    <uses-permission android:name="com.huawei.permission.SECURITY_DIAGNOSE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" /> <!-- Vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Microphone -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Connect to Internet -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Listen for the network status -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- Obtain the network status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
+    <application
+        android:name=".TikTokSampleApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.DesignDemo"
+        tools:replace="android:allowBackup,android:theme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DesignDemo.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+<!--        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />-->
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login">
+        </activity> <!-- android:theme="@style/Theme.VideoEditDemo"> -->
+        <activity android:name=".EditImageActivity" />
+        <activity android:name=".VideoEditActivity" />
+        <activity android:name=".HomeActivity">
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

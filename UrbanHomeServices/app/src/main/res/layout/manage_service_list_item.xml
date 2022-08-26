@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/hiad_10_dp"
+    app:cardCornerRadius="@dimen/hiad_10_dp"
+    app:cardElevation="@dimen/hiad_10_dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/hiad_10_dp">
+        <ImageView
+            android:id="@+id/serviceTypeImg"
+            android:layout_width="@dimen/image_height_width"
+            android:layout_height="@dimen/image_height_width"
+            android:src="@drawable/ic_electric_labour"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/serviceproviderimg" />
+        <TextView
+            android:id="@+id/serviceProviderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hiad_10_dp"
+            android:layout_marginTop="@dimen/hiad_20_dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/serviceTypeImg" />
+        <TextView
+            android:id="@+id/serviceProviderMo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hiad_10_dp"
+            android:layout_marginTop="@dimen/hiad_5_dp"
+            app:layout_constraintLeft_toRightOf="@+id/serviceTypeImg"
+            app:layout_constraintTop_toBottomOf="@+id/serviceProviderName" />
+        <TextView
+            android:id="@+id/serviceProviderEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/hiad_10_dp"
+            android:layout_marginTop="@dimen/hiad_5_dp"
+            app:layout_constraintLeft_toRightOf="@+id/serviceTypeImg"
+            app:layout_constraintTop_toBottomOf="@+id/serviceProviderMo" />
+        <Button
+            android:id="@+id/editServiceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            app:layout_constraintTop_toBottomOf="@+id/serviceProviderEmail"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/hiad_10_dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@color/transparent" />
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:layout_marginEnd="@dimen/hiad_5_dp"
+            android:layout_marginTop="@dimen/hiad_10_dp"
+            app:layout_constraintTop_toBottomOf="@+id/serviceProviderEmail"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/editServiceBtn"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@color/transparent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

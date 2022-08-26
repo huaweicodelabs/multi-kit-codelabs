@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#37474F</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="thick_gray">#5f6161</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="bg_splash">#CFD8DC</color>
+    <color name="bottomnavigation">#DAEBF2</color>
+    <color name="bottomcardview">#33C1FF</color>
+    <color name="toolbarcolor">#56ABE6</color>
+    <color name="active">#000000</color>
+    <color name="not_active">#D2D2D2</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="searchBarIconColor">#3a3a3a</color>
+    <color name="searchBarPrimaryColor">#FFFFFF</color>
+    <color name="searchBarCursorColor">#8000a1ff</color>
+    <color name="searchBarDividerColor">#1F000000</color>
+    <color name="searchBarNavIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarMenuIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarSearchIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarClearIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarBackIconTintColor">@color/searchBarIconColor</color>
+    <color name="searchBarTextColor">#DE000000</color>
+    <color name="searchBarHintColor">#42000000</color>
+    <color name="searchBarPlaceholderColor">#8A000000</color>
+    <color name="searchBarTextHighlightColor">#8000a1ff</color>
+    <color name="hiad_emui_functional_green">#41BA41</color>
+</resources>
