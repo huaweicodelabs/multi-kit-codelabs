@@ -1,0 +1,475 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        167.02890014648438,
+        167.02890014648438,
+        0.0
+      ],
+      "min": [
+        -167.02890014648438,
+        -167.02890014648438,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 48,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        2.9802322387695313e-08,
+        2.9802322387695313e-08
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 6,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 96,
+      "componentType": 5126,
+      "count": 6074,
+      "max": [
+        99.67588806152344,
+        45.450836181640625,
+        86.42218017578125
+      ],
+      "min": [
+        -99.6759033203125,
+        -45.48517608642578,
+        21.83712387084961
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 72984,
+      "componentType": 5126,
+      "count": 6074,
+      "max": [
+        0.9999866485595703,
+        0.9994235038757324,
+        0.9999997019767761
+      ],
+      "min": [
+        -0.9997714161872864,
+        -0.999039888381958,
+        -0.9999896883964539
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 32,
+      "componentType": 5126,
+      "count": 6074,
+      "max": [
+        0.999500036239624,
+        0.9874711036682129
+      ],
+      "min": [
+        0.0005000000237487257,
+        0.0005000000237487257
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 24,
+      "componentType": 5125,
+      "count": 33582,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 145872,
+      "componentType": 5126,
+      "count": 740,
+      "max": [
+        91.79896545410156,
+        26.673381805419922,
+        25.850379943847656
+      ],
+      "min": [
+        -90.94353485107422,
+        -38.26164627075195,
+        5.0067901611328125e-06
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 154752,
+      "componentType": 5126,
+      "count": 740,
+      "max": [
+        0.9987890124320984,
+        0.998367965221405,
+        1.0
+      ],
+      "min": [
+        -0.9987884163856506,
+        -0.990196704864502,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 48624,
+      "componentType": 5126,
+      "count": 740,
+      "max": [
+        0.8761246204376221,
+        0.9923298954963684
+      ],
+      "min": [
+        0.0052344645373523235,
+        0.41239795088768005
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 134352,
+      "componentType": 5125,
+      "count": 2400,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "MADE.COM (https://sketchfab.com/made-it)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/oslo-3-seater-sofa-marl-grey-with-dark-oak-legs-86f35222639f4ba49265d8023e0ca925",
+      "title": "Oslo 3 Seater Sofa, Marl Grey with Dark Oak Legs"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 143952,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 54544,
+      "byteOffset": 143952,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 163632,
+      "byteOffset": 198496,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 362128,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/FLOOR_baseColor.png"
+    },
+    {
+      "uri": "textures/FABRIC_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "FLOOR",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          0.8736661585
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8929713596
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "FABRIC",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8929713596
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "WOOD",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6202362805
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plane001_FLOOR_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "FABRIC001_FABRIC_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "WOOD001_WOOD_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Oslo 3 Seater Sofa.FBX"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Plane001"
+    },
+    {
+      "mesh": 0,
+      "name": "Plane001_FLOOR_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "FABRIC001"
+    },
+    {
+      "mesh": 1,
+      "name": "FABRIC001_FABRIC_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "WOOD001"
+    },
+    {
+      "mesh": 2,
+      "name": "WOOD001_WOOD_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}

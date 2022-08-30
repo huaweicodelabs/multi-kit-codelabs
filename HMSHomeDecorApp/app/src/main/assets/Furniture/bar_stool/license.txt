@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bar Stool
+* source:	https://sketchfab.com/3d-models/bar-stool-33ba9101817a4ed5827ea906766c02b7
+* author:	shuvalov.di (https://sketchfab.com/shuvalov.di)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bar Stool" (https://sketchfab.com/3d-models/bar-stool-33ba9101817a4ed5827ea906766c02b7) by shuvalov.di (https://sketchfab.com/shuvalov.di) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

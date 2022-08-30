@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (c) Huawei Technologies Co., Ltd. 2020-2021. All rights reserved.
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License");
+  ~  * you may not use this file except in compliance with the License.
+  ~  * You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software
+  ~  * distributed under the License is distributed on an "AS IS" BASIS,
+  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  * See the License for the specific language governing permissions and
+  ~  * limitations under the License.
+  ~  */
+  -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="7dp"
+
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="7dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/shadow_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignBottom="@id/img"
+                android:src="@drawable/background_shadow" />
+
+            <ProgressBar
+                android:id="@+id/prograss_load_photo"
+                style="@android:style/Widget.Holo.ProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:text="Title"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:text="Desc" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/desc"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Source"
+                android:textColor="@color/colorTextTitle"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/desc"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/source"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Author"
+                android:textColor="@color/colorTextSubtitle" />
+
+            <RelativeLayout android:layout_height="57dp"
+            android:layout_width="match_parent"
+                android:id="@+id/root_view" android:layout_below="@+id/source"
+                android:layout_marginStart="0dp" android:layout_alignParentStart="true">
+
+            <com.huawei.hms.ads.banner.BannerView android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:id="@+id/hw_banner_view"
+                app:bannerSize="BANNER_SIZE_360_57" app:adId="testw6vs28auh3"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

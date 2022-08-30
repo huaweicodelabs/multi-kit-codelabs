@@ -1,0 +1,11 @@
+Model Information:
+* title:	Air Conditioner
+* source:	https://sketchfab.com/3d-models/air-conditioner-777cbe0d26aa4f1588050419ec24f4e4
+* author:	Daniyal Malik (https://sketchfab.com/daniyalmalik)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Air Conditioner" (https://sketchfab.com/3d-models/air-conditioner-777cbe0d26aa4f1588050419ec24f4e4) by Daniyal Malik (https://sketchfab.com/daniyalmalik) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

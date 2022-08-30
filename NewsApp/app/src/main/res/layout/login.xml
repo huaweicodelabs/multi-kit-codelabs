@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  * Copyright (c) Huawei Technologies Co., Ltd. 2020-2021. All rights reserved.
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License");
+  ~  * you may not use this file except in compliance with the License.
+  ~  * You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software
+  ~  * distributed under the License is distributed on an "AS IS" BASIS,
+  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  * See the License for the specific language governing permissions and
+  ~  * limitations under the License.
+  ~  */
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/huawei_icon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/logging_in_loading"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorTextSubtitleLight"
+            />
+
+    <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
+        android:id="@+id/hwi_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#3b5998"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:visibility="gone"
+        app:hwid_button_theme="hwid_button_theme_full_title"
+        app:hwid_corner_radius="hwid_corner_radius_small" />
+    </LinearLayout>
+</LinearLayout>

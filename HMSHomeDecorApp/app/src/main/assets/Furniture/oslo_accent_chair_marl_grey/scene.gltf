@@ -1,0 +1,462 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 819,
+      "max": [
+        34.127830505371094,
+        30.89522933959961,
+        25.24608039855957
+      ],
+      "min": [
+        -34.127838134765625,
+        -30.89522933959961,
+        -0.604301929473877
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 9828,
+      "componentType": 5126,
+      "count": 819,
+      "max": [
+        0.9988158941268921,
+        0.9985079765319824,
+        1.0
+      ],
+      "min": [
+        -0.9988158941268921,
+        -0.9911125302314758,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 819,
+      "max": [
+        0.9896932244300842,
+        0.9994999766349792
+      ],
+      "min": [
+        0.0053794910199940205,
+        0.0005000070086680353
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 6552,
+      "componentType": 5126,
+      "count": 819,
+      "max": [
+        0.8141924142837524,
+        0.856266975402832
+      ],
+      "min": [
+        -0.3799999952316284,
+        -0.12381099909543991
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2400,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 19656,
+      "componentType": 5126,
+      "count": 16273,
+      "max": [
+        42.04996871948242,
+        48.80302810668945,
+        85.751220703125
+      ],
+      "min": [
+        -41.93532180786133,
+        -37.77592849731445,
+        21.23280906677246
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 214932,
+      "componentType": 5126,
+      "count": 16273,
+      "max": [
+        0.9999204277992249,
+        0.999768078327179,
+        0.9999967217445374
+      ],
+      "min": [
+        -0.9999971985816956,
+        -0.9999743103981018,
+        -0.9999983906745911
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 13104,
+      "componentType": 5126,
+      "count": 16273,
+      "max": [
+        0.9894158244132996,
+        0.985571026802063
+      ],
+      "min": [
+        0.0005000000237487257,
+        0.0005000000237487257
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 143288,
+      "componentType": 5126,
+      "count": 16273,
+      "max": [
+        7.984000205993652,
+        7.206441879272461
+      ],
+      "min": [
+        0.01600000075995922,
+        0.01600000075995922
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9600,
+      "componentType": 5125,
+      "count": 93576,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 410208,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        167.02890014648438,
+        167.02890014648438,
+        0.0
+      ],
+      "min": [
+        -167.02890014648438,
+        -167.02890014648438,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 410256,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 273472,
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        2.98022992950564e-08,
+        2.98022992950564e-08
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 383904,
+      "componentType": 5125,
+      "count": 6,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "MADE.COM (https://sketchfab.com/made-it)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/oslo-accent-chair-marl-grey-b4485646f6c54c74b314abcfb4c007f6",
+      "title": "Oslo Accent Chair, Marl Grey"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 383928,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 273504,
+      "byteOffset": 383928,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 410304,
+      "byteOffset": 657432,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1067736,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/FLOOR_baseColor.png"
+    },
+    {
+      "uri": "textures/WOOD_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/EnvironmentAmbientLight_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "FLOOR",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.09001585088471749,
+          0.09001585088471749,
+          0.09001585088471749,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "WOOD",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8370807926829268,
+          0.8370807926829268,
+          0.8370807926829268,
+          1.0
+        ],
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "EnvironmentAmbientLight",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "WOOD",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "FABRIC",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TEXCOORD_0": 7,
+            "TEXCOORD_1": 8
+          },
+          "indices": 9,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "FLOOR",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TEXCOORD_0": 12
+          },
+          "indices": 13,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        5,
+        7
+      ],
+      "name": "Collada visual scene group"
+    },
+    {
+      "children": [
+        3,
+        4
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.8488579988479614,
+        -6.395697116851807,
+        0.7620086073875427,
+        1.0
+      ],
+      "name": "Oslo_Accent_Chair"
+    },
+    {
+      "mesh": 0,
+      "name": "WOOD"
+    },
+    {
+      "mesh": 1,
+      "name": "FABRIC"
+    },
+    {
+      "children": [
+        6
+      ],
+      "name": "Plane001"
+    },
+    {
+      "mesh": 2,
+      "name": "FLOOR"
+    },
+    {
+      "children": [
+        8
+      ],
+      "name": "EnvironmentAmbientLight"
+    },
+    {
+      "name": "EnvironmentAmbientLight"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

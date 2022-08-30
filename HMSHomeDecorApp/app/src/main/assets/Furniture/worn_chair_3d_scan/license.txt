@@ -1,0 +1,11 @@
+Model Information:
+* title:	Worn Chair 3D Scan
+* source:	https://sketchfab.com/3d-models/worn-chair-3d-scan-734cdd9a5bba4bc6916331d04c3498a2
+* author:	mylonas1988 (https://sketchfab.com/mylonas1988)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Worn Chair 3D Scan" (https://sketchfab.com/3d-models/worn-chair-3d-scan-734cdd9a5bba4bc6916331d04c3498a2) by mylonas1988 (https://sketchfab.com/mylonas1988) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

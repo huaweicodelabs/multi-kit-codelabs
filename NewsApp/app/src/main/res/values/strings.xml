@@ -1,0 +1,51 @@
+<!--
+  ~ /*
+  ~  * Copyright (c) Huawei Technologies Co., Ltd. 2020-2021. All rights reserved.
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License");
+  ~  * you may not use this file except in compliance with the License.
+  ~  * You may obtain a copy of the License at
+  ~  *
+  ~  * http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software
+  ~  * distributed under the License is distributed on an "AS IS" BASIS,
+  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  * See the License for the specific language governing permissions and
+  ~  * limitations under the License.
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">SmartNewsApp</string>
+    <string name="news_error">No News Found, Please try again later</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="login">SmartNewsApp</string>
+    <string name="english">English</string>
+    <string name="chinese">Chinese</string>
+    <string name="french">French</string>
+    <string name="italian">Italian</string>
+    <string name="german">German</string>
+    <string name="spanish">Spanish</string>
+    <string name="business_topic">business</string>
+    <string name="sports_topic">business</string>
+    <string name="enterainment_topic">business</string>
+    <string name="subscribe_sucessfull">Subscribe Complete</string>
+    <string name="subscribe_failed"> Subscribe failed</string>
+    <string name="unsubscribe_sucessfull">Unsubscribe Complete</string>
+    <string name="unsubscribe_failed"> failed to unsubscribe</string>
+    <string name="unsubscribe_exception">unsubscribe failed exception occurred</string>
+    <string name="subscribe_exception">subscribe failed exception occurred</string>
+    <string name="token_recieved">new token recieved</string>
+    <string name="message_recieved">new message recieved</string>
+    <string name="notification_Recieved">new notification recieved</string>
+    <string name="sigin_failed">sign in failed : Api exception occurred</string>
+    <string name="Network_sucess">Network kit initializated successfully</string>
+    <string name="Network_failed">sign in failed : Api exception occurred</string>
+    <string name="asr_errorCode">Failed to start the service</string>
+    <string name="unable_to_login">Not able to login</string>
+    <string name="able_to_login">Successfully Logged in</string>
+    <string name="logging_in_loading">Logging into Huawei Account....</string>
+
+
+</resources>

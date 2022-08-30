@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Huawei Technologies Co., Ltd. 2020-2022. All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <color name="primaryColor">#ffea00</color>
+    <color name="primaryLightColor">#ffff56</color>
+    <color name="primaryDarkColor">#c7b800</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffe01b</color>
+    <color name="colorGreen">#78ca28</color>
+    <color name="selected_product_count">#4d4d4d</color>
+    <color name="list_product_name">#121212</color>
+    <color name="list_products_price">#4d4d4d</color>
+    <color name="gradient_2">#3e3e3e</color>
+    <color name="bg_separator">#DA707070</color>
+    <color name="border_remove_item">#fc9898</color>
+    <color name="btn_remove_item">#fc2222</color>
+    <color name="red_dull">#FC5A5A</color>
+    <color name="bg_input_form">#FFEB6E</color>
+    <color name="hint_label">#4E4E4E</color>
+    <color name="grey">#5b5b5b</color>
+    <color name="lbl_secondary">#8d8d8d</color>
+
+     <array name="active">
+        <item>@color/primaryDarkColor</item>
+        <item>@color/primaryDarkColor</item>
+        <item>@color/primaryDarkColor</item>
+        <item>@color/primaryDarkColor</item>
+        <item>@color/primaryDarkColor</item>
+    </array>
+    <array name="inactive">
+        <item>@color/lbl_secondary</item>
+        <item>@color/lbl_secondary</item>
+        <item>@color/lbl_secondary</item>
+        <item>@color/lbl_secondary</item>
+        <item>@color/lbl_secondary</item>
+    </array>
+    <color name="orange">#FFC107</color>
+    <color name="range">#FF9800</color>
+    <color name="background_color">#FF1100</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>
