@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loginViewModel"
+            type="com.huawei.hms.knowmyboard.dtse.activity.viewmodel.LoginViewModel" />
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="75dp"
+        tools:context=".activity.fragments.LoginFragment">
+
+
+            <!--<EditText
+                android:id="@+id/ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:hint="@string/site_query_suggestion_search_hint"
+                />-->
+            <com.huawei.hms.maps.MapView
+                android:id="@+id/mapview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                map:cameraZoom="10" />
+
+
+
+        <!--    <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                tools:context=".activity.view.MainActivity">
+                <com.huawei.hms.maps.MapView
+                    xmlns:map="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/mapview_mapviewdemo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    map:cameraTargetLat="48.893478"
+                    map:cameraTargetLng="2.334595"
+                    map:cameraZoom="10"/>
+                &lt;!&ndash;<androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="6dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">&ndash;&gt;
+
+                &lt;!&ndash;    </androidx.cardview.widget.CardView>&ndash;&gt;
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/txt_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/image_logo"
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        app:srcCompat="@drawable/know_my_board_logo" />
+                </LinearLayout>
+
+                <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
+                    android:id="@+id/btn_huaweiIdAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:elevation="7dp"
+                    android:gravity="center"
+                    android:onClick="@{(view) -> loginViewModel.loginClicked(view)}"
+                    android:padding="7dp"
+                    app:hwid_button_theme="hwid_button_theme_full_title"
+                    app:hwid_color_policy="hwid_color_policy_red"
+                    app:hwid_corner_radius="hwid_corner_radius_large"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.529"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </FrameLayout>
+
+
+</layout>

@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_share"
+        android:orderInCategory="50"
+        android:title="@string/share"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_login"
+        android:orderInCategory="50"
+        android:title="@string/login"
+        android:icon="@mipmap/ic_login"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_login_logout"
+        android:orderInCategory="50"
+        android:title="@string/msg_logout"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/menu_cancel_auth"
+        android:orderInCategory="50"
+        android:title="@string/cancel_auth"
+        app:showAsAction="collapseActionView" />
+   <!-- <item
+        android:id="@+id/clear_pref"
+        android:orderInCategory="100"
+        android:title="@string/clear_pref"
+        app:showAsAction="collapseActionView" />-->
+    <item
+        android:id="@+id/option_refresh_location"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="@string/label_refresh_locaion"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:fitsSystemWindows="true"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <com.huawei.hms.knowmyboard.dtse.activity.ml.LensEnginePreview
+        android:id="@+id/live_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp">
+
+        <com.huawei.hms.knowmyboard.dtse.activity.ml.GraphicOverlay
+            android:id="@+id/live_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+    </com.huawei.hms.knowmyboard.dtse.activity.ml.LensEnginePreview>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="@dimen/icon_back_width"
+        android:layout_height="@dimen/icon_back_height"
+        android:layout_marginLeft="@dimen/icon_back_margin"
+        android:layout_marginTop="@dimen/icon_back_margin"
+        android:background="@drawable/button_circle_background"
+        android:src="@drawable/black_back" />
+
+    <ImageButton
+        android:id="@+id/text_imageSwitch"
+        android:layout_width="@dimen/icon_back_width"
+        android:layout_height="@dimen/icon_back_height"
+        android:layout_marginTop="@dimen/icon_back_margin"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/language_setting"
+        android:background="@drawable/button_circle_background"
+        android:padding="5dp"
+        android:visibility="invisible"
+        android:src="@drawable/album_round"
+        android:tint="@color/colorPrimary" />
+
+    <ImageButton
+        android:id="@+id/language_setting"
+        android:layout_width="@dimen/icon_back_width"
+        android:layout_height="@dimen/icon_back_height"
+        android:layout_marginTop="@dimen/icon_back_margin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_circle_background"
+        android:src="@mipmap/icon_language_setting" />
+
+    <RelativeLayout
+        android:id="@+id/zoomImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+
+        <com.huawei.hms.knowmyboard.dtse.activity.ml.ZoomImageView
+            android:id="@+id/take_picture_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+        <ImageButton
+            android:id="@+id/zoomImageClose"
+            android:layout_width="@dimen/icon_back_width"
+            android:layout_height="@dimen/icon_back_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/ic_menu_close_clear_cancel" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="197dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_translated_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="142dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:id="@+id/takePicture"
+        android:layout_width="@dimen/circle_stroke_radius"
+        android:layout_height="@dimen/circle_stroke_radius"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/take_picture_stroke"  />
+
+</RelativeLayout>
