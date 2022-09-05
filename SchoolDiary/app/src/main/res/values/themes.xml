@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SchoolDairy" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/color_thm_blue</item>
+        <item name="colorPrimaryDark">@color/color_thm_blue_dark</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <!-- Calender - Date Picker Theme Start -->
+    <style name="AppTheme.DatePickerDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:colorAccent">@color/color_thm_blue</item>
+        <item name="android:colorControlActivated">@color/color_thm_blue_dark</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/AppTheme.Alert.Button.Positive</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/AppTheme.Alert.Button.Negative</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/AppTheme.Alert.Button.Neutral</item>
+    </style>
+
+    <style name="AppTheme.Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/color_thm_blue</item>
+    </style>
+
+    <style name="AppTheme.Alert.Button.Negative" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/color_thm_blue</item>
+    </style>
+
+    <style name="AppTheme.Alert.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/color_thm_blue</item>
+    </style>
+    <!-- Calender - Date Picker Theme End -->
+
+    <style name="Theme.SchoolDairy.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SchoolDairy.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white_half</item>
+    </style>
+
+    <style name="Theme.SchoolDairy.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

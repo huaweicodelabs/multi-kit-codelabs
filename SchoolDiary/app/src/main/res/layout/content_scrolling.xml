@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activities.StudentDetailActivity"
+    tools:showIn="@layout/activity_student_detail">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_student_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:itemCount="10"
+        tools:listitem="@layout/layout_task_list_item"
+        android:nestedScrollingEnabled="false" />
+
+</androidx.core.widget.NestedScrollView>

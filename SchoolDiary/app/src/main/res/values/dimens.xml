@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="app_bar_height">240dp</dimen>
+
+    <dimen name="logo_img_width">100dp</dimen>
+    <dimen name="logo_img_height">100dp</dimen>
+
+    <dimen name="login_btn_width">260dp</dimen>
+    <dimen name="login_btn_height">55dp</dimen>
+
+    <dimen name="qr_img_width">122dp</dimen>
+    <dimen name="qr_img_height">122dp</dimen>
+
+    <dimen name="qr_button_margin">20dp</dimen>
+    <dimen name="qr_screen_margin_top">20dp</dimen>
+    <dimen name="qr_image_width">152dp</dimen>
+    <dimen name="qr_image_height">152dp</dimen>
+    <dimen name="qr_txt_size">20dp</dimen>
+    <dimen name="qr_card_view_height">252dp</dimen>
+    <dimen name="qr_card_view_margin">40dp</dimen>
+    <dimen name="qr_radius">5dp</dimen>
+    <dimen name="qr_elevation">5dp</dimen>
+    <dimen name="welcome_layout_padding">30dp</dimen>
+    <dimen name="welcome_txt_size">30sp</dimen>
+    <dimen name="welcome_layout_margin_top">10dp</dimen>
+    <dimen name="welcome_txt_margint_top">10dp</dimen>
+
+
+    <!-- Teacher and Student Profile-->
+    <dimen name="student_name">25sp</dimen>
+    <dimen name="student_information">18sp</dimen>
+    <dimen name="Others">18sp</dimen>
+    <dimen name="Settings">18sp</dimen>
+
+</resources>

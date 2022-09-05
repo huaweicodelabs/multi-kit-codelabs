@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.StudentMapActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/card_view_background_color"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qr_screen_margin_top">
+
+            <ImageView
+                android:layout_width="@dimen/qr_image_width"
+                android:layout_height="@dimen/qr_image_height"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/qr_icon" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/qr_button_margin"
+                android:fontFamily="@font/abhaya_libre_medium"
+                android:text="@string/connect_msg"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/cv_connect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorAccent_light"
+            android:orientation="vertical"
+            android:padding="@dimen/welcome_layout_padding">
+
+            <TextView
+                android:id="@+id/txt_heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/welcome_txt_margint_top"
+                android:fontFamily="sans-serif-black"
+                android:text="Welcome Student"
+                android:textSize="@dimen/welcome_txt_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_heading2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/welcome_layout_margin_top"
+                android:fontFamily="sans-serif"
+                android:text="@string/connect_first"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/whole_bg_color" />
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="@dimen/qr_card_view_height"
+        android:layout_height="@dimen/qr_card_view_height"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/qr_card_view_margin"
+        android:layout_marginTop="@dimen/qr_card_view_margin"
+        android:layout_marginEnd="@dimen/qr_card_view_margin"
+        android:layout_marginBottom="@dimen/qr_card_view_margin"
+        app:cardBackgroundColor="@color/color_thm_blue_dark"
+        app:cardCornerRadius="@dimen/qr_radius"
+        app:cardElevation="@dimen/qr_elevation"
+        app:contentPadding="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/lay_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_connect"
+                android:layout_width="@dimen/qr_img_width"
+                android:layout_height="@dimen/qr_img_height"
+                app:srcCompat="@drawable/ic_scan" />
+
+            <TextView
+                android:id="@+id/tv_connect_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_connect"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:text="@string/click_to_connect_teacher"
+                android:textColor="@color/qr_txt_bg_color"
+                android:textSize="@dimen/qr_txt_size" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

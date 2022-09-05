@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">School Diary</string>
+    <string name="title_activity_teachers_home">TeachersHomeActivity</string>
+    <string name="hometab_teach_task">Today\'s Task</string>
+    <string name="hometab_teach_task_history">Task History</string>
+    <string name="hometab_teach_student">Students</string>
+    <string name="label_status">Status :</string>
+    <string name="label_due_date">Due Date :</string>
+    <string name="label_submitted_date">Submitted Date :</string>
+    <string name="title_activity_student_detail">StudentDetailActivity</string>
+    <string name="SIGN_IN_FAILED_TAG">signin failed</string>
+    <string name="SIGN_IN_FAILED_MSG">on error</string>
+    <string name="LOGIN_ACTIVITY_TAG">TAG</string>
+    <string-array name="role_array">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+
+    <string name="student_name">John Marshall</string>
+    <string name="student_information">Student Information</string>
+    <string name="student_id">Student Id</string>
+    <string name="email_id">Email Id</string>
+    <string name="others">Others</string>
+    <string name="my_task_history">My Task History</string>
+    <string name="settings">Settings</string>
+    <string name="scan_map">Scan to Map QR</string>
+
+
+    <string name="BACKGROUND_LOCATION_PERMISSION">android.permission.ACCESS_BACKGROUND_LOCATION</string>
+    <string name="title_task_detail">Task Detail</string>
+    <string name="title_task_summary">Task Summary</string>
+    <string name="title_create_task">New Task</string>
+    <string name="action_profile">Profile</string>
+    <string name="connect_msg">Connect to Student</string>
+    <string name="click_to_connect_teacher">Click here to connect with Teacher</string>
+    <string name="connect_first">For mapping tap on image to show the generated QR code</string>
+    <string name="dialog_ok_btn">OKAY</string>
+</resources>
