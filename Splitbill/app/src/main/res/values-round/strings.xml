@@ -1,0 +1,4 @@
+<resources>
+    <string name="hello_world">Hello Round World!</string>
+    <string name="send">Send</string>
+</resources>

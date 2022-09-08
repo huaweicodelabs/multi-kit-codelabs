@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.fragments.CreateGroupFragment">
+
+        <Button
+            android:id="@+id/act_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginEnd="@dimen/inner_frame_layout_padding"
+            android:background="@drawable/button_background"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <TextView
+                style="@style/textStyle_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/box_inset_layout_padding"
+                android:text="@string/createNewGroup" />
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/inner_frame_layout_padding">
+
+                <ImageView
+                    android:id="@+id/act_groupprofile_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/group_image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/group" />
+
+                <ImageView
+                    android:id="@+id/img_group_picture"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="@string/addImage"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_photo_camera_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inner_frame_layout_padding">
+
+                <ImageView
+                    android:id="@+id/act_groupprofile_icon"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:contentDescription="@string/groupName"
+                    android:padding="@dimen/dimen_10"
+                    android:src="@drawable/ic_baseline_group_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/act_groupprofile_title_tv"
+                    style="@style/textSize_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/inner_frame_layout_padding"
+                    android:layout_toEndOf="@id/act_groupprofile_icon"
+                    android:text="@string/groupName" />
+
+                <EditText
+                    android:id="@+id/act_group_name_rt"
+                    style="@style/textSize_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/act_groupprofile_title_tv"
+                    android:layout_marginStart="@dimen/inner_frame_layout_padding"
+                    android:layout_toEndOf="@id/act_groupprofile_icon"
+                    android:hint="@string/enterGroupName"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    tools:ignore="Autofill" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inner_frame_layout_padding">
+
+                <ImageView
+                    android:id="@+id/act_group_about_iv"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:contentDescription="@string/status"
+                    android:padding="@dimen/dimen_10"
+                    android:src="@drawable/ic_baseline_new_releases_24"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/act_group_aboutTv"
+                    style="@style/textSize_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/inner_frame_layout_padding"
+                    android:layout_toEndOf="@id/act_group_about_iv"
+                    android:text="@string/status" />
+
+                <Spinner
+                    android:id="@+id/spinner_status"
+                    style="@style/textSize_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/act_group_aboutTv"
+                    android:layout_marginStart="@dimen/inner_frame_layout_padding"
+                    android:layout_toEndOf="@id/act_group_about_iv"
+                    android:spinnerMode="dropdown" />
+                <ProgressBar
+                    android:id="@+id/progressCreateGroupFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_170"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inner_frame_layout_padding">
+
+                <ImageView
+                    android:id="@+id/act_groupdesc_icon"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:contentDescription="@string/descrpiton"
+                    android:padding="@dimen/dimen_10"
+                    android:src="@drawable/account"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/act_groupdesc_title_tv"
+                    style="@style/textSize_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/inner_frame_layout_padding"
+                    android:layout_toEndOf="@id/act_groupdesc_icon"
+                    android:text="@string/groupDescription" />
+
+                <EditText
+                    android:id="@+id/act_groupdec_name_rt"
+                    style="@style/textSize_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/act_groupdesc_title_tv"
+                    android:layout_marginStart="@dimen/inner_frame_layout_padding"
+                    android:layout_toEndOf="@id/act_groupdesc_icon"
+                    android:hint="@string/enterGroupDescription"
+                    android:inputType="text"
+                    android:lines="1"
+                    tools:ignore="Autofill" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/textSize_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addFriends" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inner_frame_layout_padding">
+                <Button
+                    android:id="@+id/addingNewFriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/dimen_180"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/addFriend"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/addFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/box_inset_layout_padding"
+                    android:layout_marginBottom="@dimen/box_inset_layout_padding"
+                    tools:listitem="@layout/friends_card" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

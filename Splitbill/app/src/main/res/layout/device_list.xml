@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_80"
+            tools:ignore="HardcodedText">
+
+            <RelativeLayout
+                android:id="@+id/fileListDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/imageview_icon"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/sec_orange"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageview_files"
+                    android:layout_width="@dimen/dimen_60"
+                    android:layout_height="@dimen/dimen_60"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/dimen_15"
+                    android:contentDescription="Group icon"
+                    android:padding="@dimen/dimen_2"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/phone" />
+
+                <TextView
+                    android:id="@+id/tv_deviceList"
+                    style="@style/textSize_20"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dimen_15"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_toEndOf="@+id/imageview_files"
+                    android:text="Device 1"
+                    android:textColor="@color/colorTextMain" />
+
+                <ImageView
+                    android:id="@+id/imageview_arrow"
+                    android:layout_width="@dimen/dimen_20"
+                    android:layout_height="@dimen/dimen_20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:layout_marginEnd="@dimen/dimen_15"
+                    android:contentDescription="Group icon"
+                    android:padding="@dimen/dimen_2"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrow_thick2" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/colorSmoke"/>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</layout>

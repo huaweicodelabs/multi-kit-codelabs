@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/icebergColor">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/expenseDetailBlockCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginBottom="3dp"
+            app:cardCornerRadius="@dimen/dimen_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/expenseDetailBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageViewExpenseDetail"
+                    android:layout_width="@dimen/dimen_170"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/group"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/expenseDetailName"
+                    style="@style/textSize_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/dimen_7"
+                    app:layout_constraintLeft_toLeftOf="@id/imageViewExpenseDetail"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewExpenseDetail"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/expenseDetailAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/dimen_7"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewExpenseDetail"
+                    app:layout_constraintTop_toBottomOf="@+id/expenseDetailName" />
+
+                <TextView
+                    android:id="@+id/expenseDetailDescp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/dimen_7"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewExpenseDetail"
+                    android:text="Taxi from Bangalore airport"
+                    app:layout_constraintHorizontal_bias="0.735"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expenseDetailAmount" />
+
+                <View
+                    android:id="@+id/expenseDetailAmountLine"
+                    android:layout_width="@dimen/dimen_400"
+                    android:layout_height="1dp"
+                    android:layout_alignTop="@+id/expenseName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/dimen_47"
+                    android:background="@color/colorTextMain"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewExpenseDetail"
+                    app:layout_constraintTop_toBottomOf="@+id/expenseDetailAmount" />
+
+                <TextView
+                    android:id="@+id/expenseDetailPaidby"
+                    style="@style/textSize_18_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/paidBy"
+                    android:textColor="@android:color/holo_green_dark"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewExpenseDetail"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expenseDetailAmountLine" />
+
+                <TextView
+                    android:id="@+id/Receiver"
+                    style="@style/textSize_18_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    app:layout_constraintLeft_toRightOf="@+id/expenseDetailPaidby"
+                    app:layout_constraintTop_toBottomOf="@+id/expenseDetailAmountLine" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/shares_list_title"
+            style="@style/textSize_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:text="@string/participants"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expenseDetailBlockCard" />
+
+        <RelativeLayout
+            android:id="@+id/friends_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shares_list_title">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sharersList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginEnd="@dimen/box_inset_layout_padding"
+                tools:listitem="@layout/friends_card" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sharersList"
+                android:layout_margin="@dimen/dimen_40"
+                android:text="@string/share" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.fragments.GroupDetailFragment"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dimen_10"
+    android:layout_marginEnd="@dimen/dimen_10"
+    >
+    <RelativeLayout
+        android:id="@+id/expense_title"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+       >
+    <TextView
+        android:id="@+id/expense_title_tv"
+        style="@style/textSize_14"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/expenseTitle" />
+
+    <ImageView
+        android:id="@+id/img_group_pic"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/expense_title_tv"
+        android:layout_marginStart="@dimen/dimen_60"
+        android:contentDescription="@string/addImage"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_photo_camera_24" />
+
+
+        <EditText
+            android:id="@+id/addExpenseName"
+            style="@style/textSize_18"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/expense_title_tv"
+
+            app:layout_constraintTop_toBottomOf="@+id/expense_title_tv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:hint="@string/enterExpenseName"
+            android:inputType="text"
+            android:lines="1"
+            android:textColor="@color/black"
+            tools:ignore="Autofill" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/expense_description_tv"
+        style="@style/textSize_14"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/dimen_10"
+        app:layout_constraintTop_toBottomOf="@+id/expense_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/expDescription" />
+
+    <EditText
+        android:id="@+id/addExpenseDescription"
+        style="@style/textSize_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expense_description_tv"
+        android:layout_marginStart="@dimen/inner_frame_layout_padding"
+        app:layout_constraintTop_toBottomOf="@+id/expense_description_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="@string/enterDescription"
+        android:inputType="text"
+        android:lines="2"
+        android:textColor="@color/black"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/expense_Paid_By"
+        style="@style/textSize_14"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseDescription"
+        android:layout_marginStart="@dimen/dimen_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/expensePaidBy" />
+
+    <Spinner
+        android:id="@+id/spinner_status"
+        style="@style/textSize_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layout_constraintTop_toBottomOf="@+id/expense_Paid_By"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:spinnerMode="dropdown" />
+
+
+    <TextView
+        android:id="@+id/friends_list_title"
+        style="@style/textSize_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addFriends"
+        android:layout_marginTop="@dimen/dimen_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_status"/>
+
+    <RelativeLayout
+        android:id="@+id/friends_list"
+        android:layout_height="@dimen/dimen_230"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="@dimen/dimen_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friends_list_title">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/dimen_10"
+            android:id="@+id/addFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="@dimen/box_inset_layout_padding"
+
+            tools:listitem="@layout/friends_card" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/expense_submit_btn"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/button_background"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friends_list"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+</layout>

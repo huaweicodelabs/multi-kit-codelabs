@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        tools:ignore="HardcodedText">
+
+        <RelativeLayout
+            android:id="@+id/groupListDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/imageview_icon"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@color/sec_orange"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageview_group"
+                android:layout_width="@dimen/dimen_60"
+                android:layout_height="@dimen/dimen_60"
+                android:padding="@dimen/dimen_2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_group_24"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:contentDescription="Group icon" />
+
+            <TextView
+                android:id="@+id/textview_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_toEndOf="@+id/imageview_group"
+                android:text="Group A"
+                android:textColor="@color/colorTextMain"
+                style="@style/textSize_20" />
+
+            <TextView
+                android:id="@+id/textview_second"
+                style="@style/textSize_14_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/textview_first"
+                android:layout_marginStart="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_30"
+                android:layout_toEndOf="@+id/imageview_group"
+                android:text="Me, Joe, Anna"
+                android:textColor="@color/colorTextMain" />
+
+
+            <ImageView
+                android:id="@+id/imageview_arrow"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:layout_marginEnd="@dimen/dimen_15"
+                android:padding="@dimen/dimen_2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_thick2"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="Group icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/colorSmoke"/>
+    </androidx.cardview.widget.CardView>
+</layout>

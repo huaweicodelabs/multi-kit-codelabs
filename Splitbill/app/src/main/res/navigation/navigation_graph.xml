@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_groups">
+
+    <fragment
+        android:id="@+id/navigation_groups"
+        android:name="com.huawei.codelabs.splitbill.ui.main.fragments.GroupFragment"
+        android:label="Group"
+        tools:layout="@layout/fragment_group" >
+        <action
+            android:id="@+id/action_start_createGroupFragment"
+            app:destination="@id/createGroupFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.huawei.codelabs.splitbill.ui.main.fragments.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/sendExpenseDetailsFragment"
+        android:name="com.huawei.codelabs.splitbill.ui.main.fragments.SendExpenseDetailsFragment"
+        android:label="fragment_sendExpense_detail"
+        tools:layout="@layout/fragment_send_expense_details" />
+    <fragment
+        android:id="@+id/navigation_activity"
+        android:name="com.huawei.codelabs.splitbill.ui.main.fragments.FileDetailsFragment"
+        android:label="FileDetails"
+        tools:layout="@layout/fragment_file_details" />
+
+    <fragment
+        android:id="@+id/createGroupFragment"
+        android:name="com.huawei.codelabs.splitbill.ui.main.fragments.CreateGroupFragment"
+        android:label="fragment_create_group"
+        tools:layout="@layout/fragment_create_group" />
+    <fragment
+        android:id="@+id/groupDetailFragment"
+        android:name="com.huawei.codelabs.splitbill.ui.main.fragments.GroupDetailFragment"
+        android:label="fragment_group_detail"
+        tools:layout="@layout/fragment_group_detail" >
+        <action
+            android:id="@+id/action_newExpense"
+            app:destination="@id/newExpense" />
+    </fragment>
+    <fragment
+        android:id="@+id/newExpense"
+        android:name="com.huawei.codelabs.splitbill.ui.main.fragments.NewExpenseFragment"
+        android:label="fragment_new_expense"
+        tools:layout="@layout/fragment_new_expense" />
+    <fragment
+        android:id="@+id/expenseDetailFragment"
+        android:name="com.huawei.codelabs.splitbill.ui.main.fragments.ExpenseDetailFragment"
+        android:label="fragment_expense_detail"
+        tools:layout="@layout/fragment_expense_detail" >
+        <action
+            android:id="@+id/action_send_expense_details"
+            app:destination="@id/sendExpenseDetailsFragment" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginLeft="@dimen/inner_frame_layout_padding"
+    android:layout_marginRight="@dimen/inner_frame_layout_padding"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dimen_10">
+
+    <RelativeLayout
+        android:id="@+id/expenseDetailItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/imageview_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/dimen_15"
+            android:background="@color/sec_orange">
+
+        <TextView
+            android:id="@+id/currencyExpense"
+            android:maxWidth="@dimen/dimen_180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/Rs"
+            android:maxLines="1"
+            android:ellipsize="end"
+            style="@style/textSize_20" />
+
+        <TextView
+            android:id="@+id/expenseAmount"
+            android:maxWidth="@dimen/dimen_180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:paddingLeft="@dimen/dimen_10"
+            android:layout_alignLeft="@id/currencyExpense"
+            android:text="100"
+            android:maxLines="1"
+            android:ellipsize="end"
+            style="@style/textSize_20" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/expenseName"
+            android:maxWidth="@dimen/dimen_180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_100"
+            android:text="House rent"
+            android:maxLines="1"
+            android:ellipsize="end"
+            style="@style/textSize_18" />
+
+        <TextView
+            android:id="@+id/expenseParticipants"
+            android:maxWidth="@dimen/dimen_180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignTop="@id/expenseName"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:layout_marginStart="@dimen/dimen_100"
+            android:text="Me, Joe, Anna"
+            android:maxLines="1"
+            android:ellipsize="end"
+            style="@style/textSize_14_light" />
+
+
+        <View
+            android:id="@+id/lineseparator"
+            android:layout_width="@dimen/dimen_400"
+            android:layout_height="1dp"
+            android:layout_alignTop="@id/expenseParticipants"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorTextMain"/>
+
+        <TextView
+            android:id="@+id/payee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_30"
+            android:layout_alignTop="@id/lineseparator"
+            android:text="john"
+            android:ellipsize="end"
+            android:maxLines="1"
+            style="@style/textSize_14_green" />
+
+        <ImageView
+            android:id="@+id/imageview_arrow"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:padding="@dimen/dimen_2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_thick2"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Group icon" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>

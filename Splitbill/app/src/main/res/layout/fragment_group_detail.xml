@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/icebergColor"
+        tools:context=".ui.main.fragments.GroupDetailFragment">
+
+
+        <ImageView
+            android:id="@+id/groupDetailImage"
+            android:layout_width="@dimen/dimen_70"
+            android:layout_height="@dimen/dimen_70"
+            android:layout_marginStart="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:contentDescription="@string/group_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/group" />
+
+        <TextView
+            style="@style/textSize_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:lines="1"
+            android:text="@string/descrpiton" />
+
+        <TextView
+
+            style="@style/textSize_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:lines="1"
+            android:text="@string/statusGroupDetail" />
+
+        <TextView
+            android:id="@+id/groupDetailStatusShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_150"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:lines="1"
+            android:text="@string/active" />
+
+        <TextView
+            android:id="@+id/groupDetailsDescriptionShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/dimen_60"
+            android:lines="2"
+            android:text="@string/groupDesc" />
+
+        <TextView
+            style="@style/textSize_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_100"
+            android:text="@string/membersGroupDetail" />
+
+        <TextView
+            android:id="@+id/groupDetailsMemeberTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_130"
+            android:lines="2"
+            android:text="@string/memberHelloWorld" />
+
+        <TextView
+            style="@style/textSize_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="230dp"
+            android:lines="1"
+            android:text="@string/totalExpense" />
+
+        <TextView
+            android:id="@+id/groupDetailTotalExpenseCurrenyTextView"
+            style="@style/textSize_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_250"
+            android:layout_marginTop="@dimen/dimen_265"
+            android:lines="1"
+            android:text="@string/currency" />
+
+        <TextView
+            android:id="@+id/groupDetailTotalExpenseAmountTextView"
+            style="@style/textSize_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_270"
+            android:layout_marginTop="@dimen/dimen_265"
+            android:lines="1"
+            android:text="@string/amount00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/groupDetailMyExpenseTextView"
+            style="@style/textSize_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_230"
+            android:lines="1"
+            android:text="@string/myExpense" />
+
+        <TextView
+            android:id="@+id/groupDetailMyExpenseCurrencyTextView"
+            style="@style/textSize_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_25"
+            android:layout_marginTop="@dimen/dimen_265"
+            android:lines="1"
+            android:text="@string/currency" />
+
+        <TextView
+            android:id="@+id/groupDetailMyExpenseAmountTextView"
+            style="@style/textSize_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen45"
+            android:layout_marginTop="@dimen/dimen_265"
+            android:lines="1"
+            android:text="@string/amount120"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_170"
+            android:gravity="center">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/textSize_18">
+
+            </com.google.android.material.tabs.TabLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:contentDescription="@string/addexpense"
+            android:src="@drawable/ic_baseline_add_24" />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_300" />
+
+
+
+
+    </FrameLayout>
+
+</layout>
+

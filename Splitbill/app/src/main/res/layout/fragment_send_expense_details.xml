@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/scan_heading"
+            style="@style/textStyle_35"
+            android:textSize="@dimen/dimen_30"
+           />
+
+        <ProgressBar
+            android:id="@+id/pb_main_download"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/tv_main_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/barcode_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_filesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/connectedDevice"
+            style="@style/textStyle_30"
+            android:textSize="@dimen/dimen_20"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/device_list" />
+    </LinearLayout>
+</layout>
+
+

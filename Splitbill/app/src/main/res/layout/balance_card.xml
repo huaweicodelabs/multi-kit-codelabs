@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50"
+    android:background="@color/colorSmoke"
+    android:layout_marginTop="@dimen/inner_frame_layout_padding"
+    android:layout_marginBottom="@dimen/inner_frame_layout_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorSmoke"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageview_group"
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_60"
+            android:padding="@dimen/dimen_2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/money"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:contentDescription="Group icon" />
+
+
+        <TextView
+            android:id="@+id/balanceSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_80"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:ellipsize="end"
+            android:maxWidth="180dp"
+            android:maxLines="2"
+            android:text="Joe"
+            style="@style/textSize_14" />
+
+
+        <TextView
+            android:id="@+id/balanceOwes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_toEndOf="@+id/balanceSender"
+            android:text="@string/oweBy"
+            style="@style/textSize_14_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/balanceRecipient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_50"
+            android:layout_toEndOf="@+id/balanceOwes"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/dimen_170"
+            android:maxLines="2"
+            android:text="John"
+            style="@style/textSize_14" />
+
+        <View
+            android:layout_width="@dimen/dimen_400"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/balanceSender"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorTextMain"
+            android:layout_marginTop="@dimen/dimen_30" />
+
+        <TextView
+            android:id="@+id/balanceAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/balanceSender"
+            android:layout_alignRight="@id/balanceRecipient"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="100"
+            style="@style/textSize_14_green"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

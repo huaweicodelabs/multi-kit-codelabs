@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Splitbill</string>
+    <string name="splash_app_name">SplitBill</string>
+    <string name="home">Home</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="error_mobile">Please enter mobile number</string>
+    <string name="error_otp">Please enter otp code</string>
+    !-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_activity_auth">AuthActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="get_code">Get Code</string>
+    <string name="add_group_event">Add group</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="descrpiton">Descrpiton</string>
+    <string name="statusGroupDetail">Status : </string>
+    <string name="status">Status</string>
+    <string name="membersGroupDetail">MEMBERS</string>
+    <string name="totalExpense">Total Expense</string>
+    <string name="currency">Rs</string>
+    <string name="myExpense">My Expense</string>
+    <string name="expense">Expense</string>
+    <string name="balance">Balance</string>
+    <string name="group_image">Group Image</string>
+    <string name="addFriends">Add Friends</string>
+    <string name="addImage">Add Image</string>
+    <string name="groupName">Group Name</string>
+    <string name="enterGroupName">Enter Group Name</string>
+    <string name="groupDescription">Group Description</string>
+    <string name="enterGroupDescription">Enter Group Description</string>
+    <string name="addexpense">Add Expense</string>
+    <string name="createNewGroup">Create New Group</string>
+    <string name="submit">Submit</string>
+    <string name="paidBy">paid by</string>
+    <string name="oweBy">Owe</string>
+    <string name="copyright">Copyright 2022. Huawei Technologies Co., Ltd. All rights reserved.</string>
+    <string name="slogan">We make money work in your favor.</string>
+    <string name="addFriend">Add Friend</string>
+    <string name="cancel">Cancel</string>
+    <string name="loading">Loading</string>
+    <string name="pleaseWait">Please wait</string>
+
+    <string-array name="languages">
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="connectedDevice">Connected Device List</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="amount00">00</string>
+    <string name="amount120">120.0</string>
+    <string name="memberHelloWorld">Me, John, Anna</string>
+    <string name="helloWold">Hello World</string>
+    <string name="inActive">Inactive</string>
+    <string name="active">Active</string>
+    <string name="groupDesc">We are working together in our company </string>
+
+    <string name="empty_group_list">No groups found</string>
+    <string name="login_and_try_again">Please login and try again</string>
+    <string name="add_group_failed">Unable to create group</string>
+    <string name="add_group_success">Created group</string>
+    <string name="add_friend_success">Added Friend</string>
+    <string name="add_friend_failed">Unable to add friend</string>
+
+    <!-- Expense-->
+    <string name="addExpense">Add Expense</string>
+    <string name="expenseTitle">Expense Title</string>
+    <string name="enterExpenseName">Enter Title</string>
+    <string name="expensePaidBy">Paid by</string>
+    <string name="expDescription">Expense Amount</string>
+    <string name="enterDescription">Enter Expense in Number</string>
+
+    <string-array name="members">
+        <item>John</item>
+        <item>Joe</item>
+        <item>Anna</item>
+    </string-array>
+
+
+    <string name="participants">Participants</string>
+    <string name="add_user_failed">Unable to create user</string>
+    <string name="add_expense_failed">Unable to create expense</string>
+    <string name="add_expense_success">Expense added</string>
+    <string name="send">Send</string>
+    <string name="invoice_download">Receive</string>
+    <string name="share">Share</string>
+    <string name="scan_heading">Please Scan the Code</string>
+    <string name="scanned_heading"> Received file</string>
+    <string name="filesListText">Received Files</string>
+    <string name="all_files_sent">All Files Sent Successfully.</string>
+
+    <string name="Rs">\u20B9</string>
+    <string name="rs">\u20A8</string>
+
+</resources>
