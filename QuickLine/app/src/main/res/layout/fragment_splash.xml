@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_lightest">
+
+    <ImageView
+        android:id="@+id/image_bg_logo"
+        android:layout_width="@dimen/_64sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintBottom_toTopOf="@+id/text_app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/bg_logo" />
+
+    <ImageView
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_bg_logo"
+        app:layout_constraintEnd_toEndOf="@+id/image_bg_logo"
+        app:layout_constraintStart_toStartOf="@+id/image_bg_logo"
+        app:layout_constraintTop_toTopOf="@+id/image_bg_logo"
+        app:srcCompat="@drawable/ic_camera"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/text_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/app_name"
+        android:textColor="@color/orange_dark"
+        android:textSize="@dimen/_24ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/image_bg_logo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/image_bg_logo"
+        app:layout_constraintTop_toBottomOf="@+id/image_bg_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

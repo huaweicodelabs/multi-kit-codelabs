@@ -1,0 +1,100 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.huawei.agconnect'
+}
+
+android {
+    compileSdk Configs.compileSdkVersion
+
+    defaultConfig {
+        applicationId Configs.applicationId
+        minSdk Configs.minSdkVersion
+        targetSdk Configs.targetSdkVersion
+        versionCode Configs.versionCode
+        versionName Configs.versionName
+
+        testInstrumentationRunner Configs.jUnitRunner
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = Versions.jvmVersion
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+
+dependencies {
+
+    implementation Dependencies.coreKtx
+    implementation Dependencies.appCompat
+    implementation Dependencies.materialDesign
+    implementation Dependencies.constraintLayout
+    implementation Dependencies.navigationFragment
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    testImplementation Dependencies.jUnit
+    androidTestImplementation Dependencies.testJUnit
+    androidTestImplementation Dependencies.espressoCore
+
+    implementation Dependencies.navigationUi
+
+    implementation Dependencies.hiltAndroid
+    kapt Dependencies.hiltKapt
+
+    implementation Dependencies.lifecycleCommon
+
+    implementation Dependencies.glide
+    kapt Dependencies.glideKapt
+
+    implementation Dependencies.sdp
+    implementation Dependencies.ssp
+
+    //AGConnect
+    implementation Dependencies.agconnect
+
+    //CloudDB
+    implementation Dependencies.cloudDB
+
+    //WebRTC
+    implementation Dependencies.webRTC
+
+    //Auth
+    implementation Dependencies.auth
+    implementation Dependencies.huaweiAuth
+
+    //Wireless
+    implementation Dependencies.wirelessKit
+    implementation Dependencies.lottie
+
+    //Crash
+    implementation Dependencies.crashService
+    implementation Dependencies.apmAgc
+
+    //SafetyDetect
+    implementation Dependencies.safetyDetect
+
+    //Analytics Kit
+    implementation Dependencies.analyticsKit
+
+    //Push Kit
+    implementation Dependencies.pushKit
+
+    // Liveness Detection SDK.
+    implementation Dependencies.livenessDetection
+}

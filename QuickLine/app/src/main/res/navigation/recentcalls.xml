@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recentCalls"
+    app:startDestination="@id/recentCallsFragment">
+
+    <fragment
+        android:id="@+id/recentCallsFragment"
+        android:name="com.hms.quickline.ui.recentcalls.RecentCallsFragment"
+        android:label="fragment_recent_calls"
+        tools:layout="@layout/fragment_recent_calls" />
+</navigation>

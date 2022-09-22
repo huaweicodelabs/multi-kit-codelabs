@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorXMediaPrimaryDark"
+    tools:context=".ui.compose.ComposeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/ic_baseline_home_24"
+            app:layout_constraintBottom_toBottomOf="@id/compose_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/compose_title" />
+
+
+        <ProgressBar
+            android:id="@+id/process_compose"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_compose" />
+
+        <TextView
+            android:id="@+id/compose_title"
+            style="@style/home_text_style_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/compose"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_instruments"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/compose_title" />
+
+        <TextView
+            android:id="@+id/txt_select_instruments"
+            style="@style/home_text_style_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/select_instruments"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_instruments" />
+
+        <EditText
+            android:id="@+id/txt_compose_name"
+            style="@style/home_text_style_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:text="@string/sound_name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_select_instruments" />
+
+        <Button
+            android:id="@+id/btn_change_sound_name"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/editing"
+            app:layout_constraintBottom_toBottomOf="@id/txt_compose_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_compose_name"
+            app:layout_constraintTop_toTopOf="@id/txt_compose_name" />
+
+
+        <Button
+            android:id="@+id/btn_compose"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/compose_sounds"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_compose_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

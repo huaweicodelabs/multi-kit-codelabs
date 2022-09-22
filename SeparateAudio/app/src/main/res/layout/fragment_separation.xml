@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorXMediaPrimaryDark"
+    tools:context=".ui.separation.SeparationFragment">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_separation_fragment"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorXMediaSliderBackground"
+            android:alpha="0.8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/txt_process_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/this_can_take_several_minutes"
+                android:textColor="@color/white"
+                style="@style/home_text_style_semi_bold"
+                android:layout_marginTop="64dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/process_separation"/>
+
+            <TextView
+                android:id="@+id/txt_separation_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                style="@style/home_text_style_semi_bold"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_process_title"
+                app:layout_constraintBottom_toTopOf="@id/process_separation"/>
+
+            <ProgressBar
+                android:id="@+id/process_separation"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/separate_title"
+            style="@style/home_text_style_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/separation"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_select_all"
+            style="@style/home_text_style_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@id/checkbox_select_all"
+            app:layout_constraintTop_toBottomOf="@id/separate_title"
+            android:text="@string/select_all"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_select_all"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="@id/rv_instruments"
+            app:layout_constraintTop_toTopOf="@id/txt_select_all"
+            app:layout_constraintBottom_toBottomOf="@id/txt_select_all"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_instruments"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_select_all" />
+
+        <TextView
+            android:id="@+id/txt_selected_instruments"
+            style="@style/home_text_style_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_instruments"
+            android:text="@string/select_instruments"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/txt_output_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/output_path"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/home_text_style_semi_bold"
+                app:layout_constraintTop_toBottomOf="@id/txt_selected_instruments"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="32dp"
+                android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_output_folder_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/home_text_style_semi_bold"
+            app:layout_constraintTop_toBottomOf="@id/txt_output_path"
+            android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txt_change_output_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_output_path"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_selected_instruments"
+                android:textColor="@color/colorXMediaPrimaryBlue"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_separate"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/custom_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_output_path"
+            android:text="@string/separate_audio"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

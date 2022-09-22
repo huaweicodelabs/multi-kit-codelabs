@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.call.VideoCallActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_calling_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/img_user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_36sdp"
+            android:visibility="visible"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/img_voice_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="anim_voice_call.json"
+            app:lottie_loop="true" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_calling_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_calling_time_minute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+        tools:text="Caner Türe" />
+
+    <ImageView
+        android:id="@+id/mic_btn"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/circle_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/end_call_btn"
+        app:layout_constraintEnd_toStartOf="@+id/end_call_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/end_call_btn"
+        app:srcCompat="@drawable/ic_mic" />
+
+    <ImageView
+        android:id="@+id/end_call_btn"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:background="@drawable/circle_background"
+        android:padding="@dimen/_12sdp"
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_audio_output"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mic_btn"
+        app:srcCompat="@drawable/ic_call" />
+
+    <ImageView
+        android:id="@+id/btn_audio_output"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/circle_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/end_call_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/end_call_btn"
+        app:layout_constraintTop_toTopOf="@+id/end_call_btn"
+        app:srcCompat="@drawable/ic_speaker_up" />
+
+    <TextView
+        android:id="@+id/tv_calling_time_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/end_call_btn"
+        app:layout_constraintTop_toBottomOf="@+id/tv_calling_user"
+        tools:layout_editor_absoluteX="187dp"
+        tools:text="00:" />
+
+    <TextView
+        android:id="@+id/tv_calling_time_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_calling_time_minute"
+        app:layout_constraintTop_toTopOf="@+id/tv_calling_time_minute"
+        tools:layout_editor_absoluteX="208dp"
+        tools:text="39" />
+
+    <TextView
+        android:id="@+id/tv_calling_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calling..."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_calling_time_minute"
+        app:layout_constraintEnd_toEndOf="@+id/tv_calling_user"
+        app:layout_constraintStart_toStartOf="@+id/tv_calling_user"
+        app:layout_constraintTop_toTopOf="@+id/tv_calling_time_minute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="divider">
+        <item name="android:foreground">
+            @color/colorXMediaPrimaryBlue
+        </item>
+    </style>
+
+    <style name="home_text_style_regular">
+        <item name="android:fontFamily">
+            @font/montserrat_regular
+        </item>
+    </style>
+
+    <style name="home_text_style_bold">
+        <item name="android:fontFamily">
+            @font/montserrat_bold
+        </item>
+    </style>
+
+    <style name="home_text_style_semi_bold">
+        <item name="android:fontFamily">
+            @font/montserrat_semi_bold
+        </item>
+    </style>
+
+    <style name="DialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

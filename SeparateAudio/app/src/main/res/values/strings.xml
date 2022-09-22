@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SeparateAudioCodelab</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment2">Hello blank fragment</string>
+    <string name="home_title">Hello</string>
+    <string name="home_edit">Edit</string>
+    <string name="home_video_edit_desc">Extract Audio</string>
+    <string name="home_video_edit">Extract Audio</string>
+    <string name="home_sound_edit">Separate Audios</string>
+    <string name="home_sound_edit_desc">Separate Audios</string>
+    <string name="home_title_small">Let\'s edit audio files</string>
+    <string name="extract_audio">Extract Audio</string>
+    <string name="select_video">Select Video</string>
+    <string name="permission_message_for_storage">This codelab needs your storage permission.</string>
+    <string name="dialog_title">Extraction Complete</string>
+    <string name="dialog_desc">You can use this audio for further editting.</string>
+    <string name="dialog_icon">extraction complete</string>
+    <string name="dialog_button_text">Done</string>
+    <string name="dialog_use_text">Use This Audio</string>
+    <string name="extraction">Extract Audio</string>
+    <string name="separation">Separate Audio</string>
+    <string name="select_instruments">Select Instruments</string>
+    <string name="output_path">Output Path: </string>
+    <string name="change_output_path">change</string>
+    <string name="separate_audio">Separate Audio</string>
+    <string name="instrument">Instrument</string>
+    <string name="this_can_take_several_minutes">This can take several minutes</string>
+    <string name="select_all">Select All</string>
+    <string name="compose">Compose Sounds</string>
+    <string name="compose_sounds">Compose Sounds</string>
+    <string name="sound_name">Sound Name</string>
+    <string name="composing">Composing</string>
+</resources>

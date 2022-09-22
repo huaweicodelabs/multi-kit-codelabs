@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">QuickLine</string>
+
+    //Title
+    <string name="title_splash">Splash</string>
+    <string name="title_home">Home</string>
+    <string name="title_recent_calls">Recent Calls</string>
+    <string name="title_contacts">Contacts</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="pref_speakerphone_key">speakerphone_preference</string>
+    <string name="pref_speakerphone_default">auto</string>
+    <string name="call">Call</string>
+    <string name="contacts">Contacts</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_contact_to_call">Select contact to call</string>
+    <string name="answer">Answer</string>
+    <string name="decline">Decline</string>
+    <string name="no_room_message">No room found with this ID</string>
+
+    //HomeFragment
+    <string name="meeting_id">Meeting ID</string>
+    <string name="join">Join</string>
+    <string name="create">Create</string>
+    <string name="empty_meetingid_error_message">Meeting Id must not be empty</string>
+    <string name="network_warn">Your internet connection is unstable</string>
+    <string name="user_verified_message">Your account has verified.</string>
+    <string name="user_verified_error_message">Your face not detected. Please try again.</string>
+
+    <string name="available">Available</string>
+    <string name="busy">Busy</string>
+    <string name="away">Away</string>
+    <string name="offline">Offline</string>
+
+    <string name="request_code_invalid">Request code is invalid!</string>
+    <string name="sign_in_huawei">Sign In With Huawei ID</string>
+    <string name="unknown">Unknown</string>
+
+    //Profile
+    <string name="user_name">User Name</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="mail">Mail</string>
+    <string name="sign_out">Sign Out</string>
+
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.huawei.separateaudiocodelab.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_extractionFragment"
+            app:destination="@id/extractionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_separationFragment"
+            app:destination="@id/separationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/extractionFragment"
+        android:name="com.huawei.separateaudiocodelab.ui.extraction.ExtractionFragment"
+        android:label="fragment_extraction"
+        tools:layout="@layout/fragment_extraction" >
+        <action
+            android:id="@+id/action_extractionFragment_to_separationFragment"
+            app:destination="@id/separationFragment" />
+
+        <action
+            android:id="@+id/action_extractionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/separationFragment"
+        android:name="com.huawei.separateaudiocodelab.ui.separation.SeparationFragment"
+        android:label="fragment_separation"
+        tools:layout="@layout/fragment_separation">
+        <argument
+            android:name="audioPath"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="folderPath"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="fileName"
+            app:argType="string"
+            android:defaultValue=""/>
+        <action
+            android:id="@+id/action_separationFragment_to_composeFragment"
+            app:destination="@id/composeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/composeFragment"
+        android:name="com.huawei.separateaudiocodelab.ui.compose.ComposeFragment"
+        android:label="fragment_compose"
+        tools:layout="@layout/fragment_compose">
+        <argument
+            android:name="instrumentsToCompose"
+            app:argType="com.huawei.separateaudiocodelab.model.Instrument[]"/>
+        <argument
+            android:name="exportPath"
+            app:argType="string"
+            android:defaultValue=""/>
+        <action
+            android:id="@+id/action_composeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

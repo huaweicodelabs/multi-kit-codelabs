@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="userData"
+            type="com.hms.quickline.data.model.Users" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/orange_lightest"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardElevation="@dimen/_12sdp"
+    app:contentPadding="@dimen/_12sdp"
+    app:strokeColor="@color/orange_dark"
+    app:strokeWidth="@dimen/_1sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:text="@{userData.name}"
+            app:layout_constraintStart_toEndOf="@+id/img_profile_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Caner Türe" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/text_name"
+            app:layout_constraintTop_toBottomOf="@+id/text_name">
+
+        <ImageView
+            android:id="@+id/img_state_available"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="@color/available_color"
+            app:srcCompat="@drawable/ic_check_12"
+            app:tint="@color/white"
+            android:padding="@dimen/_2sdp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textSize="@dimen/_10ssp"
+            tools:text="Available" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_voice_call"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@drawable/bg_voice_video_buttons"
+            android:padding="@dimen/_6sdp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img_video_call"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_call"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/img_video_call"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@drawable/bg_voice_video_buttons"
+            android:padding="@dimen/_6sdp"
+            app:isGone="@{!userData.isAvailable}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_camera"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/img_profile_photo"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:contactImageUrl="@{userData.photo}"
+            app:srcCompat="@drawable/ic_person"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/ivVerify"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="8dp"
+            app:isGone="@{!userData.isVerified}"
+            app:layout_constraintBottom_toBottomOf="@+id/text_name"
+            app:layout_constraintStart_toEndOf="@+id/text_name"
+            app:layout_constraintTop_toTopOf="@+id/text_name"
+            app:srcCompat="@drawable/ic_verify" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+</layout>

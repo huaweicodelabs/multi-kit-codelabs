@@ -1,0 +1,23 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+    dependencies {
+        classpath Classpaths.buildGradle
+        classpath Classpaths.kotlinGradle
+        classpath Classpaths.hiltGradle
+        classpath Classpaths.safeArgsGradle
+        classpath Classpaths.agconnectGradle
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
