@@ -1,12 +1,12 @@
 ## QuickLine
 ![Latest Version](https://img.shields.io/badge/latestVersion-1.0-yellow) ![Kotlin](https://img.shields.io/badge/language-kotlin-blue) ![Minimum SDK Version](https://img.shields.io/badge/minSDK-24-orange) ![Android Gradle Version](https://img.shields.io/badge/androidGradleVersion-7.1.2-green) ![Gradle Version](https://img.shields.io/badge/gradleVersion-7.2-informational)
 
-<img src="/screenshots/QLSS.jpg" width=150/>
-<img src="/screenshots/20220727-115811(WeLinkPC).jpg" width=150>
-<img src="/screenshots/20220727-120018(WeLinkPC).jpg" width=150>
-<img src="/screenshots/20220727-115825(WeLinkPC).jpg" width=150>
-<img src="/screenshots/20220727-115829(WeLinkPC).jpg" width=150>
-<img src="/screenshots/20220727-115833(WeLinkPC).jpg" width=150>
+<img src="screenshots/QLSS.jpg" width=150/>
+<img src="screenshots/20220727-115811(WeLinkPC).jpg" width=150>
+<img src="screenshots/20220727-120018(WeLinkPC).jpg" width=150>
+<img src="screenshots/20220727-115825(WeLinkPC).jpg" width=150>
+<img src="screenshots/20220727-115829(WeLinkPC).jpg" width=150>
+<img src="screenshots/20220727-115833(WeLinkPC).jpg" width=150>
 
 ## Introduction
 
