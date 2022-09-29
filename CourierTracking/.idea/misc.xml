@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/CourierTracking/app/src/main/res/drawable/ic_add_red_500.xml" value="0.234" />
+        <entry key="..\:/AndroidStudioProjects/CourierTracking/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/CourierTracking/app/src/main/res/layout/fragment_courier_tracking.xml" value="0.3020833333333333" />
+        <entry key="..\:/AndroidStudioProjects/CourierTracking/app/src/main/res/layout/fragment_home.xml" value="0.19265639165911153" />
+        <entry key="..\:/AndroidStudioProjects/CourierTracking/app/src/main/res/layout/fragment_splash.xml" value="0.264945652173913" />
+        <entry key="..\:/AndroidStudioProjects/CourierTracking/app/src/main/res/layout/item_order.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
