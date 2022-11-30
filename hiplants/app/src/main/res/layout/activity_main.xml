@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/huawei"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/get_image_from_gallery_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Open Gallery"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:cornerRadius="15sp"
+        app:backgroundTint="#1AC50E"
+        app:layout_constraintStart_toStartOf="@+id/image_view"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+
+    <Button
+        android:id="@+id/predict_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Predict"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1AC50E"
+        app:cornerRadius="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view"
+        app:layout_constraintTop_toBottomOf="@+id/image_view">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Gül çok güzel bir çiçektir."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/predict_button"
+        app:layout_constraintStart_toEndOf="@+id/get_image_from_gallery_button"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
