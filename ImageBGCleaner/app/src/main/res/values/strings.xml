@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImageBGCleaner</string>
+    <string name="alert_permisson_title">Permission Denied</string>
+    <string name="alert_permission_message">You need to allow permission to use the app</string>
+</resources>
