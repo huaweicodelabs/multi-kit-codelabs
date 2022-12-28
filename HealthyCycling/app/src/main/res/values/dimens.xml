@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //sp
+    <dimen name="small_text">14sp</dimen>
+    <dimen name="ex_small_text">16sp</dimen>
+    <dimen name="medium_text">18sp</dimen>
+    <dimen name="extra_medium_text">27sp</dimen>
+    <dimen name="large_text">40sp</dimen>
+
+    //dp
+    <dimen name="zero_dp">0dp</dimen>
+
+    <dimen name="extra_small_margin">10dp</dimen>
+    <dimen name="extra_small_margin_20">20dp</dimen>
+    <dimen name="small_margin">40dp</dimen>
+    <dimen name="medium_margin">80dp</dimen>
+    <dimen name="large_margin">120dp</dimen>
+
+    <dimen name="small_padding">40dp</dimen>
+    <dimen name="medium_padding">80dp</dimen>
+    <dimen name="large_padding">120dp</dimen>
+
+    <dimen name="iv_ex_small_edge_size">20dp</dimen>
+    <dimen name="iv_small_edge_size">40dp</dimen>
+    <dimen name="iv_medium_edge_size">80dp</dimen>
+    <dimen name="iv_edge_size">100dp</dimen>
+    <dimen name="iv_large_edge_size">200dp</dimen>
+    <dimen name="rv_edge_size">240dp</dimen>
+
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_320">320dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+</resources>

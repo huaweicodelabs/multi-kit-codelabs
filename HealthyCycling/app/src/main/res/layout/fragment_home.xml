@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homeFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
+
+    <ProgressBar
+        android:id="@+id/homeProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/extra_small_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAttention"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"
+        android:src="@drawable/ic_attention"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/extra_small_margin"
+        app:layout_constraintTop_toTopOf="@id/tvTitleHome"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleHome"
+        app:layout_constraintStart_toEndOf="@id/tvTitleHome"/>
+
+    <com.huawei.hms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginTop="@dimen/extra_small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPaymentInfo"
+        android:layout_width="@dimen/iv_small_edge_size"
+        android:layout_height="@dimen/iv_small_edge_size"
+        android:src="@drawable/ic_info"
+        android:layout_margin="@dimen/extra_small_margin_20"
+        app:layout_constraintStart_toStartOf="@id/mapView"
+        app:layout_constraintBottom_toBottomOf="@id/mapView"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="@dimen/iv_medium_edge_size"
+        android:layout_height="@dimen/iv_medium_edge_size"
+        android:visibility="gone"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_start"
+        android:layout_margin="@dimen/extra_small_margin_20"
+        app:layout_constraintBottom_toBottomOf="@id/mapView"
+        app:layout_constraintEnd_toEndOf="@id/mapView"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFinish"
+        android:layout_width="@dimen/iv_medium_edge_size"
+        android:layout_height="@dimen/iv_medium_edge_size"
+        android:visibility="gone"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_finish"
+        android:layout_margin="@dimen/extra_small_margin_20"
+        app:layout_constraintBottom_toBottomOf="@id/mapView"
+        app:layout_constraintEnd_toEndOf="@id/mapView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

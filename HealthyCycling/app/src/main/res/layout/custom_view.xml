@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_150"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_custom_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        tools:src="@drawable/ic_fire"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Total Calorie"
+        android:textAlignment="center"
+        android:textSize="@dimen/small_text"
+        android:layout_margin="@dimen/extra_small_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="5.0"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/extra_small_margin_20"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDataType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="cal"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/small_text"
+        android:layout_margin="@dimen/extra_small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

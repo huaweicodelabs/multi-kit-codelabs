@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.progress.ProgressFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivProgressBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_320"
+        android:background="@drawable/bg_progress"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progress"
+        android:textSize="@dimen/extra_medium_text"
+        android:layout_marginTop="@dimen/extra_small_margin_20"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubTitleProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleProgress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCalorie"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:src="@drawable/ic_fire"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/iv_small_edge_size"
+        app:layout_constraintTop_toTopOf="@id/circularProgressBar"
+        app:layout_constraintStart_toStartOf="@id/circularProgressBar"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_calorie"
+        android:textSize="@dimen/small_text"
+        android:layout_marginStart="@dimen/extra_small_margin"
+        android:textColor="@color/light_grey"
+        app:layout_constraintTop_toTopOf="@id/ivCalorie"
+        app:layout_constraintBottom_toBottomOf="@id/ivCalorie"
+        app:layout_constraintStart_toEndOf="@+id/ivCalorie"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCalorieData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="500"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/extra_small_margin_20"
+        app:layout_constraintTop_toBottomOf="@id/ivCalorie"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+        app:layout_constraintStart_toStartOf="@id/circularProgressBar"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cal"
+        android:textSize="@dimen/small_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/extra_small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvCalorieData"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+        app:layout_constraintStart_toStartOf="@id/circularProgressBar"/>
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="@dimen/iv_large_edge_size"
+        android:layout_height="@dimen/iv_large_edge_size"
+        android:layout_marginTop="@dimen/dimen_100"
+        app:cpb_background_progressbar_color="@color/grey"
+        app:cpb_background_progressbar_width="@dimen/dimen_4"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="@color/purple_500"
+        app:cpb_progressbar_width="@dimen/extra_small_margin"
+        app:cpb_round_border="true"
+        app:cpb_progress_max="10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/extra_small_margin_20"
+        app:layout_constraintTop_toBottomOf="@id/ivProgressBg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.myapps.hibike.utils.CustomView
+            android:id="@+id/customTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.myapps.hibike.utils.CustomView
+            android:id="@+id/customSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/extra_small_margin_20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/extra_small_margin_20"
+        app:layout_constraintTop_toBottomOf="@id/llFirst"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.myapps.hibike.utils.CustomView
+            android:id="@+id/customDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.myapps.hibike.utils.CustomView
+            android:id="@+id/customRide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/extra_small_margin_20" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

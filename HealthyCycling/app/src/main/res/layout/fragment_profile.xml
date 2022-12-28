@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_information"
+        android:textSize="@dimen/extra_medium_text"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/iv_edge_size"
+        android:layout_height="@dimen/iv_edge_size"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_marginTop="@dimen/dimen_100"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Feyzaa"
+        android:textSize="@dimen/medium_text"
+        android:layout_marginTop="@dimen/extra_small_margin"
+        app:layout_constraintTop_toBottomOf="@id/ivProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWeightTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_weight"
+        android:textSize="@dimen/ex_small_text"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_100"
+        android:layout_marginHorizontal="@dimen/small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplayName"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0.0"
+        android:textSize="@dimen/ex_small_text"
+        android:textColor="@color/blue"
+        android:layout_marginStart="@dimen/extra_small_margin"
+        app:layout_constraintTop_toTopOf="@id/tvWeightTitle"
+        app:layout_constraintStart_toEndOf="@id/tvWeightTitle"/>
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/extra_small_margin"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/tvWeightTitle"
+        app:layout_constraintTop_toTopOf="@id/tvWeightTitle"
+        app:layout_constraintBottom_toBottomOf="@id/tvWeightTitle"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"
+        android:src="@drawable/ic_edit"
+        android:layout_marginEnd="@dimen/small_margin"
+        app:layout_constraintTop_toTopOf="@id/tvWeightTitle"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivOk"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"
+        android:src="@drawable/ic_tick"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/small_margin"
+        app:layout_constraintTop_toTopOf="@id/tvWeightTitle"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLastRides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_last_rides"
+        android:textColor="@color/blue"
+        android:background="@drawable/bg_stroke"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginHorizontal="@dimen/small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvWeightTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_sign_out"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginHorizontal="@dimen/small_margin"
+        app:layout_constraintTop_toBottomOf="@id/btnLastRides"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/profileProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

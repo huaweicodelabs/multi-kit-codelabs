@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="10/20/2022 9:11"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/medium_text"
+        android:layout_margin="@dimen/extra_small_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAttention"
+        android:layout_width="@dimen/iv_ex_small_edge_size"
+        android:layout_height="@dimen/iv_ex_small_edge_size"
+        android:src="@drawable/ic_attention"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/extra_small_margin_20"
+        app:layout_constraintTop_toTopOf="@id/tvDate"
+        app:layout_constraintBottom_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toEndOf="@id/tvDate"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAttention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unpaid"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/extra_small_margin"
+        app:layout_constraintTop_toTopOf="@id/ivAttention"
+        app:layout_constraintBottom_toBottomOf="@id/ivAttention"
+        app:layout_constraintStart_toEndOf="@id/ivAttention"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAmount"
+        android:layout_width="@dimen/iv_ex_small_edge_size"
+        android:layout_height="@dimen/iv_ex_small_edge_size"
+        android:src="@drawable/ic_money"
+        android:layout_margin="@dimen/extra_small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="TRY 5.00"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/extra_small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toEndOf="@id/ivAmount"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDuration"
+        android:layout_width="@dimen/iv_ex_small_edge_size"
+        android:layout_height="@dimen/iv_ex_small_edge_size"
+        android:src="@drawable/ic_timer"
+        android:layout_marginVertical="@dimen/extra_small_margin"
+        android:layout_marginStart="@dimen/extra_small_margin_20"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toEndOf="@id/tvAmount"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1 h 1 min"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/extra_small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toEndOf="@id/ivDuration"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDistance"
+        android:layout_width="@dimen/iv_ex_small_edge_size"
+        android:layout_height="@dimen/iv_ex_small_edge_size"
+        android:src="@drawable/ic_cycling"
+        android:layout_marginVertical="@dimen/extra_small_margin"
+        android:layout_marginStart="@dimen/extra_small_margin_20"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toEndOf="@id/tvDuration"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0.9 km"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/extra_small_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        app:layout_constraintStart_toEndOf="@id/ivDistance"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_line"
+        android:layout_marginStart="@dimen/extra_small_margin"
+        android:layout_marginVertical="@dimen/extra_small_margin_20"
+        app:layout_constraintTop_toBottomOf="@id/ivAmount"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
