@@ -1,0 +1,29 @@
+install! 'cocoapods', generate_multiple_pod_projects: true
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'EcommerceCodelabwith3DModeling' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  #use_frameworks!
+
+
+  pod 'SwiftLint'
+  pod 'SnapKit'
+  pod 'AGConnectAuth'
+  pod 'AGConnectDatabase'
+  pod "AGConnectStorage"
+  pod 'AGConnectCore'
+  pod 'ZIPFoundation', '~> 0.9'
+  
+  # Pods for EcommerceCodelabwith3DModeling
+
+  target 'EcommerceCodelabwith3DModelingTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'EcommerceCodelabwith3DModelingUITests' do
+    # Pods for testing
+  end
+
+end
