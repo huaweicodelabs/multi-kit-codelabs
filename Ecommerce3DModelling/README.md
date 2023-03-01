@@ -14,10 +14,10 @@ Ecommerce3DModelling is an e-commerce application. It allows you to categorize y
 ## Screenshots
 
 - You can create an account with AppGalleryConnect Auth Service with your email.</br>
-<img src='/screenshots/Picture1.png' width='350'>  
+<img src='screenshots/Picture1.png' width='350'>  
 
 - Sweet UI for you to save all product information to Cloud DB.</br>
-<img src='/screenshots/Picture2.png' width='350'>
+<img src='screenshots/Picture2.png' width='350'>
 
 - You can list products by category and view them in 3D.</br>
-<img src='/screenshots/Picture4.png' width='350'> <img src='/screenshots/Picture3.png' width='350'>
+<img src='screenshots/Picture4.png' width='350'> <img src='screenshots/Picture3.png' width='350'>
